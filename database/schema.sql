@@ -1,5 +1,4 @@
-CREATE DATABASE IF NOT EXISTS security_app CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE security_app;
+-- Ejecutá este script estando dentro de tu base en Hostinger.
 
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
