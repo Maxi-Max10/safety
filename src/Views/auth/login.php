@@ -1,6 +1,6 @@
 <div class="dark" style="font-family: 'Manrope', sans-serif;">
     <div class="min-h-[100dvh] w-full bg-gradient-to-b from-slate-100 via-slate-200 to-slate-300 dark:from-[#0b1220] dark:via-[#0d1526] dark:to-[#0b1220] text-slate-900 dark:text-white transition-colors duration-300 flex items-center justify-center px-4 py-10">
-        <div class="relative w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 overflow-hidden shadow-2xl border-0 rounded-3xl bg-white/70 dark:bg-[#0f172a]/90 backdrop-blur-lg">
+        <div class="relative w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 overflow-hidden shadow-2xl border-0 rounded-3xl bg-[#0b1220] text-white">
             <div class="absolute inset-0 -z-10 opacity-30 pointer-events-none hidden md:block">
                 <svg class="absolute -top-10 -right-20 w-[500px] h-[500px]" viewBox="0 0 100 100">
                     <circle class="text-primary" cx="50" cy="50" fill="none" r="40" stroke="currentColor" stroke-width="0.5"></circle>
