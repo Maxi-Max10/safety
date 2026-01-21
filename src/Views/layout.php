@@ -2,7 +2,21 @@
 ?>
 <?php
 $docRoot = $_SERVER['DOCUMENT_ROOT'] ?? '';
-$assetBase = file_exists($docRoot . '/assets/app.css') ? '' : (file_exists($docRoot . '/public/assets/app.css') ? '/public' : '');
+$scriptDir = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? ''));
+$scriptDir = ($scriptDir === '/' || $scriptDir === '.') ? '' : $scriptDir;
+
+// Resolve asset base for different docroot/subdir setups
+$assetBase = '';
+$candidates = [];
+if ($scriptDir !== '') { $candidates[] = $scriptDir; }
+$candidates[] = '';
+$candidates[] = '/public';
+foreach ($candidates as $candidate) {
+    if (file_exists($docRoot . $candidate . '/assets/app.css')) {
+        $assetBase = $candidate;
+        break;
+    }
+}
 ?>
 <!doctype html>
 <html lang="es">
