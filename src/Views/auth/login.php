@@ -1,6 +1,7 @@
 <div class="dark" style="font-family: 'Manrope', sans-serif;">
-    <div class="relative flex h-screen w-full max-w-[430px] mx-auto flex-col overflow-x-hidden shadow-2xl border-x border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
-        <header class="flex items-center justify-between p-6 pt-12">
+    <div class="min-h-[100dvh] w-full bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300 flex items-center justify-center px-4 py-8">
+        <div class="relative w-full max-w-[960px] flex flex-col overflow-x-hidden shadow-2xl border border-slate-200 dark:border-slate-800 rounded-3xl bg-background-light dark:bg-background-dark">
+        <header class="flex items-center justify-between p-6 pt-10">
             <div class="flex items-center gap-2">
                 <div class="size-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/30">
                     <span class="material-symbols-outlined text-2xl font-bold">shield</span>
@@ -15,7 +16,7 @@
             </div>
         </header>
 
-        <main class="flex-1 px-6 flex flex-col justify-center">
+        <main class="flex-1 px-6 md:px-10 flex flex-col justify-center">
             <div class="mb-10 text-center">
                 <h1 class="text-3xl font-bold leading-tight tracking-tight dark:text-white mb-2">Authorize Access</h1>
                 <p class="text-slate-500 dark:text-slate-400 text-sm">Please verify your credentials to enter the secure portal.</p>
@@ -75,7 +76,7 @@
             </div>
         </main>
 
-        <footer class="p-8 text-center">
+        <footer class="p-6 md:p-8 text-center">
             <div class="flex items-center justify-center gap-2 mb-2 text-emerald-500">
                 <span class="material-symbols-outlined text-sm">lock</span>
                 <span class="text-[10px] font-bold uppercase tracking-widest">End-to-End Encrypted</span>
@@ -83,12 +84,13 @@
             <p class="text-[10px] text-slate-400 dark:text-slate-500">Authorized Personnel Only. All activities are logged for auditing purposes.</p>
         </footer>
 
-        <div class="absolute top-0 right-0 -z-10 opacity-10 pointer-events-none overflow-hidden h-full w-full">
+        <div class="absolute top-0 right-0 -z-10 opacity-10 pointer-events-none overflow-hidden h-full w-full hidden md:block">
             <svg class="absolute -top-20 -right-20 w-[400px] h-[400px]" viewBox="0 0 100 100">
                 <circle class="text-primary" cx="50" cy="50" fill="none" r="40" stroke="currentColor" stroke-width="0.5"></circle>
                 <circle class="text-primary" cx="50" cy="50" fill="none" r="30" stroke="currentColor" stroke-width="0.5"></circle>
                 <path class="text-primary" d="M50 10 L50 90 M10 50 L90 50" fill="none" stroke="currentColor" stroke-width="0.2"></path>
             </svg>
+        </div>
         </div>
     </div>
 </div>
